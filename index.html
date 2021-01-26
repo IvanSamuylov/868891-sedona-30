@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Город Sedona</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/152.svg" type="image/svg+×ml">
+    <link rel="apple-touch-icon" href="favicon/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body>
     <header>
         <nav>
@@ -38,7 +41,7 @@
                         <br>
                         течёт своя жизнь
                     </p>
-                    <img src="#" width="800" height="256" alt="Фото города Sedona">
+                    <img src="img/SedonaView.jpg" width="800" height="256" alt="Фото города Sedona">
                 </li>
                 <li>
                     <h3>Там есть мост дьявола</h3>
@@ -47,7 +50,7 @@
                         <br>
                         вы осмелитесь
                     </p>
-                    <img src="#" width="800" height="256" alt="Фото моста дьявола">
+                    <img src="img/SedonaBridge.jpg" width="800" height="256" alt="Фото моста дьявола">
                 </li>
                 <li>
                     <h3>Небольшая прощадь</h3>
@@ -101,6 +104,18 @@
         <p>Укажите предполагаемые даты поездки,
             <br>и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
+        <section>
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <h3>Поиск гостиницы в Седоне</h3>
+                <ul>
+                    <li><p>Дата заезда:<input type="date" name="calendar" value="2017-04-24"></p></li>
+                        <li><p>Дата выезда:<input type="date" name="calendar" value="2017-07-04"></p></li>
+                        <li><p>Взрослые:<input type="number" name="adultquantity" value="2" min="1" step="1"></p></li>
+                        <li><p>Дети:<input type="number" name="adultquantity" value="0" min="0" step="1"></p></li>
+                </ul>
+                <button type="submit">Найти</button>
+               </form>
+        </section>
     </main>
     <div>
         <!--Подключить карту-->
