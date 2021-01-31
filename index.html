@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <title>Город Sedona</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/152.svg" type="image/svg+×ml">
-    <link rel="apple-touch-icon" href="favicon/152.png">
+    <link rel="icon" href="favicon/favicon152.svg" type="image/svg+×ml">
+    <link rel="apple-touch-icon" href="faviconfavicon/152.png">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body>
     <header>
         <nav>
             <a>
-                <img src="#" width="138" height="70" alt="Логотип города Sedona">
+                <img src="img/logo-sedona-main.svg" width="138" height="70" alt="Логотип города Sedona">
             </a>
             <ul>
                 <li><a href="#">Информация</a></li>
@@ -24,7 +25,10 @@
         </nav>
     </header>
     <main>
-        <img src="#" width="1200" height="509" alt="Фото вида каньона города Sedona">
+        <img src="img/sedona-view-background.jpg" width="1200" height="509" alt="Фото вида каньона города Sedona">
+        <img src="img/ShapeWelcome.png" width="187,74" height="44,75" alt="">
+        <img src="img/ShapeToTheGorgeous.svg" width="255,95" height="28,8" alt="">
+        <img src="img/ShapeSedona.svg" width="456,65" height="213,03" alt="">
         <h1>Город в Аризоне Седона</h1>
         <h2>Седона - небольшой городок в Аризоне,
             <br>
@@ -41,7 +45,7 @@
                         <br>
                         течёт своя жизнь
                     </p>
-                    <img src="img/SedonaView.jpg" width="800" height="256" alt="Фото города Sedona">
+                    <img src="img/sedonaview-town.jpg" width="800" height="256" alt="Фото города Sedona">
                 </li>
                 <li>
                     <h3>Там есть мост дьявола</h3>
@@ -50,7 +54,7 @@
                         <br>
                         вы осмелитесь
                     </p>
-                    <img src="img/SedonaBridge.jpg" width="800" height="256" alt="Фото моста дьявола">
+                    <img src="img/sedona-bridge.jpg" width="800" height="256" alt="Фото моста дьявола">
                 </li>
                 <li>
                     <h3>Небольшая прощадь</h3>
@@ -81,21 +85,21 @@
                         <p>Рекомендуем пожить в настоящем
                             <br>мотеле, всё как в кино!
                         </p>
-                        <!--Добавить иконку-->
+                        <img src="img/icon-home.png" width="75" height="72" alt="">
                     </li>
                     <li>
                         <h3>Еда</h3>
                         <p>Всегда заказывайте фирменный бургер,
                             <br>вы не разочаруетесь!
                         </p>
-                        <!--Добавить иконку-->
+                        <img src="img/icon-food.png" width="75" height="70" alt="">
                     </li>
                     <li>
                         <h3>Сувениры</h3>
                         <p>Не только китайского, но и местного
                             <br>производства!
                         </p>
-                        <!--Добавить иконку-->
+                        <img src="img/icon-souvenir.png" width="64" height="77" alt="">
                     </li>
                 </ul>
             </section>
@@ -106,15 +110,23 @@
         </p>
         <section>
             <form method="get" action="https://echo.htmlacademy.ru">
-                <h3>Поиск гостиницы в Седоне</h3>
+                <button type="button">Поиск гостиницы в Седоне</button>
                 <ul>
-                    <li><p>Дата заезда:<input type="date" name="calendar" value="2017-04-24"></p></li>
-                        <li><p>Дата выезда:<input type="date" name="calendar" value="2017-07-04"></p></li>
-                        <li><p>Взрослые:<input type="number" name="adultquantity" value="2" min="1" step="1"></p></li>
-                        <li><p>Дети:<input type="number" name="adultquantity" value="0" min="0" step="1"></p></li>
+                    <li>
+                        <p>Дата заезда:<input type="date" name="calendar" value="2017-04-24"></p>
+                    </li>
+                    <li>
+                        <p>Дата выезда:<input type="date" name="calendar" value="2017-07-04"></p>
+                    </li>
+                    <li>
+                        <p>Взрослые:<input type="number" name="adultquantity" value="2" min="1" step="1"></p>
+                    </li>
+                    <li>
+                        <p>Дети:<input type="number" name="adultquantity" value="0" min="0" step="1"></p>
+                    </li>
                 </ul>
                 <button type="submit">Найти</button>
-               </form>
+            </form>
         </section>
     </main>
     <div>
@@ -130,19 +142,27 @@
             <h2>Социальные сети</h2>
             <ul>
                 <li>
-                    <a href="#">Мы Вконтакте</a>
+                    <a href="#">
+                        <img src="img/icon-twitter.png" width="16,98" height="15,01" alt="Мы в твиттере"> 
+                    </a>
                 </li>
                 <li>
-                    <a href="#">МЫ на Фейсбук</a>
+                    <a href="#">
+                        <img src="img/icon-facebook.png" width="12" height="22" alt="МЫ на Фейсбук">
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Мы на Ютуб</a>
+                    <a href="#">
+                        <img src="img/icon-youtube.png" width="20" height="16" alt="Мы на Ютуб"></a>
                 </li>
             </ul>
         </section>
         <section>
             <h2>Сайт разработан</h2>
-            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+            <p>Website by</p>
+            <a href="https://htmlacademy.ru/">
+                <img src="img/logo-htmlacademy.png" width="113,98" height="39,78" alt="HTML ACADEMY">
+            </a>
         </section>
     </footer>
 </body>
