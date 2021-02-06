@@ -10,6 +10,7 @@
   --special-brown-active: #503e33;
   --special-blue: #669ec0;
   --special-blue-active: #5496bd;
+  --special-grey-active: #BDBBBC;
 }
 
 /* Global */
@@ -245,3 +246,12 @@ img {
   text-align: center;
 }
 /* Копирайт состояния */
+.html-icon{
+  fill:var(--basic-black);
+}
+.htmlacademy-copyright svg:hover{
+fill: var(--basic-blue);
+}
+.htmlacademy-copyright svg:active{
+  fill: var(--special-grey-active);
+}
