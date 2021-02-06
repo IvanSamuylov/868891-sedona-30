@@ -6,6 +6,10 @@
     --basic-footer: rgba(255, 255, 255, 0.9);
     --special-grey: #F2F2F2;
     --basic-black: #000000;
+    --special-brown: #604E43;
+    --special-brown-active: #503E33;
+    --special-blue: #669EC0;
+    --special-blue-active: #5496BD;
   }
 
   /* Global */
@@ -55,7 +59,10 @@
 .site-navigation a:focus {
   color: var(--basic-blue);
 }
-
+/* Описание сайта */
+.site-description{
+  text-align: center;
+}
 /* Преимущества */
 .feature-main-list {
     list-style: none;
@@ -88,3 +95,153 @@
 .advertising-info{
   text-align: center;
 }
+
+/* Кнопка поиска гостиницы */
+.button-hotel-search{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
+}
+/* Кнопка поиска гостиницы состояния*/
+.button-hotel-search:hover,
+.button-hotel-search:focus{
+  background-color: var(--special-brown);
+}
+.button-hotel-search:active{
+  background-color: var(--special-brown-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Календарь */
+.calendar-list{
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.calendar-button{
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: var(--special-grey);
+  border: none;
+}
+.members-count{
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: var(--special-grey);
+  border: none;
+}
+.button-find{
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+/* Кнопка календаря состояния */
+.button-find:hover,
+.button-find:focus{
+  background-color: var(--special-blue);
+}
+.button-find:active{
+  background-color: var(--special-blue-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Контакная информация */
+.main-footer{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.footer-contacts{
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.footer-hashtag{
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.footer-phone{
+  color: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+/* Соцсети */
+.footer-social{
+  text-align: center;
+}
+.social-list{
+  list-style: none;
+}
+.social-button1 img{
+  background: var(--basic-blue);
+  padding-left: 15px;
+  padding-top: 16px;
+  padding-right: 14px;
+  padding-bottom: 15px;
+}
+.social-button2 img{
+  background: var(--basic-blue);
+  padding-left: 17px;
+  padding-top: 13px;
+  padding-right: 17px;
+  padding-bottom: 13px;
+}
+.social-button3 img{
+  background: var(--basic-blue);
+  padding-left: 13px;
+  padding-top: 16px;
+  padding-right: 13px;
+  padding-bottom: 16px;
+}
+/* Кнопки соцсетей состояния */
+.social-button1 img:hover,
+.social-button1 img:focus{
+  background: var(--special-blue);
+}
+.social-button1 img:active{
+  background: var(--special-blue-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+.social-button2 img:hover,
+.social-button2 img:focus{
+  background: var(--special-blue);
+}
+.social-button2 img:active{
+  background: var(--special-blue-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+.social-button3 img:hover,
+.social-button3 img:focus{
+  background: var(--special-blue);
+}
+.social-button3 img:active{
+  background: var(--special-blue-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Копирайт */
+.footer-copyright{
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+/* Копирайт состояния */
