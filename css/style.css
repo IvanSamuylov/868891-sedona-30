@@ -18,7 +18,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial Rounded MT Bold", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -65,30 +65,28 @@ img {
   text-align: center;
 }
 /* Преимущества */
-.feature-main-list {
+.feature-list {
   list-style: none;
+  text-align: center;
+
 }
-.feature-main-list-item {
+/* .feature-list-item {
   text-align: center;
   list-style: none;
-}
-.feature-main-list-item h3 {
+} */
+.feature-list-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
-.feature-list-1-2 {
+.item-decoration-blue {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
-.feature-list-3-4-5 {
+.item-decoration-grey {
   background-color: var(--basic-grey);
 }
-.feature-additional-list {
-  list-style: none;
-  text-align: center;
-}
-.feature-additional-list h3 {
+.feature-list h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -190,52 +188,34 @@ img {
 .social-list {
   list-style: none;
 }
-.social-button1 img {
+.social-button-twitter {
   background: var(--basic-blue);
-  padding-left: 15px;
-  padding-top: 16px;
-  padding-right: 14px;
-  padding-bottom: 15px;
+  padding: 16px 14px 15px 15px;
 }
-.social-button2 img {
+.social-button-facebook {
   background: var(--basic-blue);
-  padding-left: 17px;
-  padding-top: 13px;
-  padding-right: 17px;
-  padding-bottom: 13px;
+  padding: 13px 17px 13px 17px;
 }
-.social-button3 img {
+.social-button-youtube {
   background: var(--basic-blue);
-  padding-left: 13px;
-  padding-top: 16px;
-  padding-right: 13px;
-  padding-bottom: 16px;
+  padding: 16px 13px 16px 13px;
 }
 /* Кнопки соцсетей состояния */
-.social-button1 img:hover,
-.social-button1 img:focus {
+.social-button-twitter:hover,
+.social-button-twitter:focus,
+.social-button-facebook:hover,
+.social-button-facebook:focus,
+.social-button-youtube:hover,
+.social-button-youtube:focus {
   background: var(--special-blue);
 }
-.social-button1 img:active {
+.social-button-twitter:active,
+.social-button-facebook:active,
+.social-button-youtube:active {
   background: var(--special-blue-active);
   color: rgba(255, 255, 255, 0.3);
 }
-.social-button2 img:hover,
-.social-button2 img:focus {
-  background: var(--special-blue);
-}
-.social-button2 img:active {
-  background: var(--special-blue-active);
-  color: rgba(255, 255, 255, 0.3);
-}
-.social-button3 img:hover,
-.social-button3 img:focus {
-  background: var(--special-blue);
-}
-.social-button3 img:active {
-  background: var(--special-blue-active);
-  color: rgba(255, 255, 255, 0.3);
-}
+
 
 /* Копирайт */
 .footer-copyright {
