@@ -213,9 +213,12 @@ img {
 .social-button-facebook:active,
 .social-button-youtube:active {
   background: var(--special-blue-active);
-  color: rgba(255, 255, 255, 0.3);
 }
-
+.social-button-twitter img:active,
+.social-button-facebook img:active,
+.social-button-youtube img:active {
+opacity: 0.3;
+}
 
 /* Копирайт */
 .footer-copyright {
