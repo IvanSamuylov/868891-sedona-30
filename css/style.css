@@ -11,6 +11,7 @@
   --special-blue: #669ec0;
   --special-blue-active: #5496bd;
   --special-grey-active: #BDBBBC;
+  --special-background:#ababab;
 }
 
 /* Global */
@@ -37,7 +38,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 /* Меню навигации */
 .main-navigation {
   font-size: 14px;
@@ -60,21 +60,20 @@ img {
 .site-navigation a:focus {
   color: var(--basic-blue);
 }
+.site-navigation-item-inner{
+  color: var(--basic-brown);
+}
 /* Описание сайта */
 .site-description {
   text-align: center;
 }
 /* Преимущества */
-.feature-list {
+.features-list {
   list-style: none;
   text-align: center;
 
 }
-/* .feature-list-item {
-  text-align: center;
-  list-style: none;
-} */
-.feature-list-item h3 {
+.features-list-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -86,7 +85,7 @@ img {
 .item-decoration-grey {
   background-color: var(--basic-grey);
 }
-.feature-list h3 {
+.features-list h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -94,7 +93,82 @@ img {
 .advertising-info {
   text-align: center;
 }
-
+/* Поиск гостинцы внутренняя страница */
+.container-catalog{
+/* Добавить фоновое изображение! */
+background-repeat: no-repeat;
+background-color: var(--special-background);
+background-image: url(img/background-sedonaview-filter.jpg);
+}
+.inner-block{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  border: none;
+  color: var(--basic-white);
+}
+.inner-block-list{
+list-style: none;
+color: var(--basic-white);
+}
+/* Кнопка внутренней страницы */
+.button-show-results{
+  text-transform: uppercase;
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  background-color: transparent;
+}
+/* Кнопка внутренней станицы состояния */
+.button-show-results:hover,
+.button-show-results:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+.filter-count{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.filter-sort{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.filter-sort-button{
+  text-transform: uppercase;
+  font: inherit;
+  text-align: center;
+  color:var(--basic-black);
+  opacity: 0.3;
+  vertical-align: middle;
+  background-color: transparent;
+  border: none;
+  border-bottom: dashed;
+}
+.filter-sort-button:hover,
+.filter-sort-button:focus{
+  color: var(--basic-blue);
+  opacity: 1;
+}
+.filter-sort-button:active{
+  color: var(--basic-black);
+  border-bottom: none;
+  opacity: 1;
+}
+.filter-results{
+  list-style: none;
+}
+.filter-results p{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.rating{
+  background-color: var(--special-grey);
+}
 /* Кнопка поиска гостиницы */
 .button-hotel-search {
   font: inherit;
@@ -186,37 +260,24 @@ img {
   text-align: center;
 }
 .social-list {
-  list-style: none;
+  list-style: none;;
 }
-.social-button-twitter {
+.social-button {
   background: var(--basic-blue);
-  padding: 16px 14px 15px 15px;
-}
-.social-button-facebook {
-  background: var(--basic-blue);
-  padding: 13px 17px 13px 17px;
-}
-.social-button-youtube {
-  background: var(--basic-blue);
-  padding: 16px 13px 16px 13px;
+  width: 46px;
+  height: 48px;
+  margin: 6px;
 }
 /* Кнопки соцсетей состояния */
-.social-button-twitter:hover,
-.social-button-twitter:focus,
-.social-button-facebook:hover,
-.social-button-facebook:focus,
-.social-button-youtube:hover,
-.social-button-youtube:focus {
+
+.social-button:hover,
+.social-button:focus {
   background: var(--special-blue);
 }
-.social-button-twitter:active,
-.social-button-facebook:active,
-.social-button-youtube:active {
+.social-button:active {
   background: var(--special-blue-active);
 }
-.social-button-twitter img:active,
-.social-button-facebook img:active,
-.social-button-youtube img:active {
+.social-button a:active {
 opacity: 0.3;
 }
 
