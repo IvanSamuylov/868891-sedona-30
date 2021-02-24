@@ -26,6 +26,11 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 /* Ссылки */
@@ -38,6 +43,32 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Гриды */
+.page {
+  height: 100%;
+}
+.main-header {
+  margin-bottom: 70px;
+  /* outline: 5px solid rgba(0, 255, 0, 0.7); */
+  outline-offset: -5px;
+}
+.main-header-logo{
+/* outline: 5px solid rgba(255, 0, 0, 0.3); */
+outline-offset: -5px;
+justify-self: center;
+}
+.item-decoration-blue{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.container{
+  display:grid;
+  justify-self: center;
+}
+/* .site-description{
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+} */
 /* Меню навигации */
 .main-navigation {
   font-size: 14px;
@@ -45,9 +76,12 @@ img {
   font-weight: 700;
   color: var(--basic-black);
   background-color: transparent;
+  display: grid;
 }
 .site-navigation {
   list-style: none;
+  /* outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px; */
 }
 
 /* Навигация-состояния */
@@ -68,11 +102,19 @@ img {
   text-align: center;
 }
 /* Преимущества */
+.features{
+  margin-bottom: 330px;
+}
 .features-list {
   list-style: none;
   text-align: center;
-
+  /* outline: 5px solid rgba(255, 0, 0 , 0.3); */
+  margin: 0;
+  padding: 0;
 }
+/* .features-list-item{
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+} */
 .features-list-item h3 {
   font-size: 21px;
   line-height: 21px;
@@ -235,6 +277,10 @@ color: var(--basic-white);
 /* Контакная информация */
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
+  /* outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .footer-contacts {
   text-align: center;
@@ -258,6 +304,8 @@ color: var(--basic-white);
 /* Соцсети */
 .footer-social {
   text-align: center;
+  width: 150px;
+  justify-self: center;
 }
 .social-list {
   list-style: none;;
@@ -267,6 +315,11 @@ color: var(--basic-white);
   width: 46px;
   height: 48px;
   margin: 6px;
+}
+.footer-copyrigh{
+  max-width: 197px;
+  margin: 0;
+  justify-self: end;
 }
 /* Кнопки соцсетей состояния */
 
