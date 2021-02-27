@@ -43,19 +43,19 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+/* Обнуление отступов */
+.ul, .p, .h1, .h2, .h3{
+  margin: 0;
+  padding: 0;
+}
 /* Гриды */
 .page {
   height: 100%;
 }
 .main-header {
   margin-bottom: 70px;
-  /* outline: 5px solid rgba(0, 255, 0, 0.7); */
-  outline-offset: -5px;
 }
 .main-header-logo{
-/* outline: 5px solid rgba(255, 0, 0, 0.3); */
-outline-offset: -5px;
 justify-self: center;
 }
 .item-decoration-blue{
@@ -66,9 +66,6 @@ justify-self: center;
   display:grid;
   justify-self: center;
 }
-/* .site-description{
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-} */
 /* Меню навигации */
 .main-navigation {
   font-size: 14px;
@@ -76,12 +73,9 @@ justify-self: center;
   font-weight: 700;
   color: var(--basic-black);
   background-color: transparent;
-  display: grid;
 }
 .site-navigation {
   list-style: none;
-  /* outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px; */
 }
 
 /* Навигация-состояния */
@@ -102,30 +96,23 @@ justify-self: center;
   text-align: center;
 }
 /* Преимущества */
-.features{
-  margin-bottom: 330px;
-}
 .features-list {
   list-style: none;
   text-align: center;
-  /* outline: 5px solid rgba(255, 0, 0 , 0.3); */
   margin: 0;
   padding: 0;
 }
-/* .features-list-item{
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-} */
 .features-list-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
-.item-decoration-blue {
-  color: var(--basic-white);
-  background-color: var(--basic-blue);
-}
 .item-decoration-grey {
   background-color: var(--basic-grey);
+}
+.item-decoration-blue div:first-child{
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
 .features-list h3 {
   font-size: 21px;
@@ -277,8 +264,6 @@ color: var(--basic-white);
 /* Контакная информация */
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
-  /* outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
