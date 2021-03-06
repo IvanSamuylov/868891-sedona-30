@@ -67,19 +67,57 @@ justify-self: center;
 }
 .container-catalog{
   display: grid;
-  grid-template-columns: 326px 485px 1fr;
+  grid-template-columns: 326px 485px 327px;
+  margin: 0px 73px;
 }
 .filter-item-1{
   grid-column-start: 1;
   grid-column-end: 2;
+  border:none;
 }
 .filter-item-2{
   grid-column-start: 2;
   grid-column-end: 3;
+  border:none;
 }
-.filter-item-3{
+.filter-item-3,
+.button-show-results{
   grid-column-start: 3;
-  grid-column-end: -1;
+  grid-column-end: 4;
+  justify-self: end;
+  border:none;
+}
+.filter-block{
+  display: grid;
+  grid-template-columns: 163px 1fr;
+  margin: 29px 73px 31px 73px;
+}
+.filter-block-item{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.filter-sort{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.filter-results-item{
+  display: grid;
+  grid-template-columns: 164px 963px 1fr;
+  min-height:150px;
+  margin: 30px 73px;
+}
+.filter-results-item1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.filter-results-item2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.filter-results-item3{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  justify-self: end;
 }
 /* Меню навигации */
 .main-navigation {
