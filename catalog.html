@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -29,10 +29,11 @@
     </nav>
   </header>
   <main>
-    <section class="container-catalog">
       <h1>Поиск жилья в Седона</h1>
+    <section class="container-catalog">
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
+          <div class="filter-item-1">
           <legend class="inner-block">Инфраструктура:</legend>
           <ul class="inner-block-list">
             <li>
@@ -48,8 +49,10 @@
               <label for="filter-wi-fi">Wi-Fi</label>
             </li>
           </ul>
+        </div>
         </fieldset>
         <fieldset>
+          <div class="filter-item-2">
           <legend class="inner-block">Тип жилья:</legend>
           <ul class="inner-block-list">
             <li>
@@ -65,12 +68,15 @@
               <label for="filter-apartments">Аппартаменты</label>
             </li>
           </ul>
+        </div>
         </fieldset>
         <fieldset>
+          <div class="filter-item-3">
           <legend class="inner-block">Стоимость в сутки (Р):</legend>
           <!--Добавить ползунок-->
         </fieldset>
         <button class="button-show-results" type="submit">Показать</button>
+      </div>
       </form>
     </section>
     <section>
